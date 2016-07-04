@@ -1,0 +1,45 @@
+body {
+	position: relative;
+	background-color: #f4f3f5;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+#attempts {
+	font-sze: 20px;
+}
+
+#circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 550;
+	height: 550px;
+	border-radius: 275px;
+	background-image: radial-gradient(#82cfc0, #ecf9f6);
+}
+
+#content {
+	color: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+	text-align: center;
+	font-size: 25px;
+	width: 250px;
+	height: 40px;
+	color: #389482;
+}
+
+button {
+	color: #2a6f61;
+}
