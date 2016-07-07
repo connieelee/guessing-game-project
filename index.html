@@ -4,17 +4,33 @@
 	<title>The Guessing Game</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src='guessingGame.js'></script>
 </head>
 <body>
-	<div id="circle">
-		<div id="content">
-			<h1>Guess The Number</h1>
-			<input type="text" placeholder="1-100...">
-			<p id="attempts">Remaining attempts: 5</p>
-			<p><button type="button">Submit</button>
-			<button type="button">Hint</button></p>
-			<p><button type="button">Retry</button></p>
+	<span id="screen"><div class="begin" id="circle">
+		<div id="game">
+			<h1>Guess The Number</h1>	
+			<input type="text" placeholder="1-100..." id="guess">
+			<p id="status">Remaining attempts: <span id="attempts">5</span></p>
+			<p><button id="submit-guess">Submit</button>
+			<button id="get-hint">Hint</button></p>
+			<p><button id="restart">Restart</button></p>
 		</div>
+	</div></span>
+
+	<div id="hint-popup">
+		<h3>HINT:</h3>
+			One of these is the winning number<br>
+			<span id="hints"></span>
+		<h3>KEY:</h3>
+			HOT: Less than 5 digits away<br>
+			WARM: Less than 10 digits away<br>
+			COOL: Less than 20 digits away<br>
+			COLD: More than 20 digits away
+		<p><button id="close-hints">Close</button></p>
 	</div>
 </body>
 </html>

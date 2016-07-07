@@ -1,4 +1,5 @@
 body {
+	display: none;
 	position: relative;
 	background-color: #f4f3f5;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -6,11 +7,9 @@ body {
 }
 
 h1 {
+	white-space: nowrap;
 	font-size: 35px;
-}
-
-#attempts {
-	font-sze: 20px;
+	font-weight: normal;
 }
 
 #circle {
@@ -21,10 +20,10 @@ h1 {
 	width: 550;
 	height: 550px;
 	border-radius: 275px;
-	background-image: radial-gradient(#82cfc0, #ecf9f6);
 }
 
-#content {
+
+#game {
 	color: #fff;
 	position: absolute;
     top: 50%;
@@ -32,14 +31,62 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+#hint-popup {
+	display: none;
+	color: #666666;
+	background: #f1f0f2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 380px;
+	height: 280px;
+	border-style: solid;
+	border-color: #dad5dd;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
 input {
 	text-align: center;
 	font-size: 25px;
-	width: 250px;
+	width: 275px;
 	height: 40px;
 	color: #389482;
 }
 
 button {
-	color: #2a6f61;
+	color: #595959;
+}
+
+.begin {
+	background-color: #7ecebe;
+}
+
+.won {
+	background-color: #4bb234;
+}
+
+.lost {
+	background-color: #535353;
+}
+
+.HOT {
+	background-color: #d22d45;
+}
+
+.WARM {
+	background-color: #f38d3f;
+}
+
+.COOL {
+	background-color: #65b6da;
+}
+
+.COLD {
+	background-color: #3971ac;
+}
+
+.screen {
+	opacity: 0.3;
 }
