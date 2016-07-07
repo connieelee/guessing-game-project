@@ -126,8 +126,10 @@ function provideHint() {
 		};
 		hints[i] = hintNumber;
 	};
-	var winnerPosition = generateRandomNumber(1,numberOfHints);
-	hints[winnerPosition] = winningNumber;
+	if (hints.indexOf(winningNumber) === -1) {
+		var winnerPosition = generateRandomNumber(1,numberOfHints);
+		hints[winnerPosition] = winningNumber;
+	}
 	$("#hints").text(hints.join(", "));
 	$("#hint-popup").slideToggle();
 }
