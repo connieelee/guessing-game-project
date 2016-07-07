@@ -5,7 +5,6 @@ var playersGuess,
 	guesses = [],
     winningNumber = generateRandomNumber(1, 100);
 
-
 /* **** Guessing Game Functions **** */
 
 // Generate the Winning Number
