@@ -89,6 +89,7 @@ function checkGuess(){
 		stateUpdate();
 	} else {
 		guesses.push(playersGuess);
+		$('#prev-guesses').text(guesses.join(", "))
 		$("#attempts").text(5 - guesses.length);
 		if (+$("#attempts").text() <= 0) {
 			stateUpdate("lost");
